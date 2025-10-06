@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usama Ashraf | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <!-- ==================== Navbar ==================== -->
+    <nav id="navbar" class="flex s-around items-center bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <li><a href="#home" class="t-white">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about" class="t-white">About <i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#skills" class="t-white">Skills <i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#projects" class="t-white">Projects <i class="fa-solid fa-project-diagram"></i></a></li>
+            <li><a href="#contact" class="t-white">Contact <i class="fa-solid fa-rocket"></i></a></li>
+        </div>
+    </nav>
+    <!-- ==================== Navbar End ==================== -->
+
+    <!-- ==================== Home ==================== -->
+    <section id="home" class="flex s-around items-center sw-80 m-auto">
+        <div class="left-home flex items-center">
+            <div class="home-content">
+                <h1>Hello, I'm</h1>
+                <h1 class="t-white">Usama Ashraf</h1>
+                <h1>Software Engineer</h1>
+                <div class="home-buttons m-top">
+                    <a href="{% static 'CV/mycv.pdf' %}" target="_blank" class="btn">Resume</a>
+                    <a href="#contact" class="btn live">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-home flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/ppp.jpeg' %}" alt="Usama Ashraf Picture">
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Home End ==================== -->
+
+    <!-- ==================== About ==================== -->
+    <section id="about">
+        <h1 class="t center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around items-center">
+            <div class="left-about">
+                <img src="{% static 'images/hhh.jpg' %}" alt="About Image"
+                    style="width:250px; height:250px; object-fit:cover; border-radius:50%;">
+            </div>
+            <div class="about-right">
+                <div class="about-content">
+                    <h2 class="t-white">Usama Ashraf</h2>
+                    <p>I am a dedicated software engineer with a strong passion for building efficient, scalable, and
+                        user-friendly applications. My expertise spans across modern web technologies and clean code
+                        design. I enjoy turning complex challenges into elegant solutions while continuously learning
+                        new technologies to deliver innovative and impactful work.</p>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn">Hire Me</a>
+                        <a href="#" target="_blank" class="btn live">Live Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== About End ==================== -->
+
+    <!-- ==================== Skills ==================== -->
+    <section id="skills">
+        <h1 class="t center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around items-center h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/iii.jpg' %}" alt="skills"
+                    style="width:300px; height:300px; object-fit:cover; border-radius:50%;">
+            </div>
+            <div class="skills-right flex s-center items-center">
+                <div class="skills-container">
+                    <div class="python bar p-relative">
+                        <span class="bar-content left t-white">Core Python</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+
+                    <div class="html bar p-relative">
+                        <span class="bar-content left t-white">HTML</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+
+                    <div class="css bar p-relative">
+                        <span class="bar-content left t-white">CSS</span>
+                        <span class="bar-content right-skills t-white">70%</span>
+                    </div>
+
+                    <div class="js bar p-relative">
+                        <span class="bar-content left t-white">JavaScript</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+
+                    <div class="sql bar p-relative">
+                        <span class="bar-content left t-white">MySQL</span>
+                        <span class="bar-content right-skills t-white">90%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Skills End ==================== -->
+
+    <!-- ==================== Projects ==================== -->
+    <section id="projects">
+        <h1 class="t center my-2 t-white f-2">My Projects</h1>
+        <div class="projects-container flex s-center f-col">
+            <div class="projects-items flex f-col s-center items-center">
+                <h2 class="t-white">Smart City Management System</h2>
+                <p>Developed a full-featured web application using Django to manage operations of a smart city. Features
+                    include real-time monitoring of traffic, weather, and air quality, as well as resource management
+                    for parking, waste, and energy. This project demonstrates expertise in backend logic, database
+                    design, and real-world problem solving.</p>
+                <a href="#" target="_blank" class="btn">GitHub</a>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+                <h2 class="t-white">Portfolio Website</h2>
+                <p>This is my personal portfolio built with HTML, CSS, and JavaScript. It showcases my projects,
+                    skills, and professional experience with a clean and modern design.</p>
+                <div class="buttons flex s-around">
+                    <a href="#" target="_blank" class="btn mx-1">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Projects End ==================== -->
+
+    <!-- ==================== Contact ==================== -->
+    <section id="contact">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-center items-center">
+            <form method="post" id="contact-form">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Enter your Name" required>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+                <input type="tel" name="number" placeholder="Enter your Phone No" required>
+                <textarea name="content" cols="30" rows="5" placeholder="Enter your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- ==================== Contact End ==================== -->
+
+    <!-- ==================== Footer ==================== -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <h3>Developed by Usama Ashraf</h3>
+        <p>Copyright &copy; 2025 All Rights Reserved</p>
+    </footer>
+    <!-- ==================== Footer End ==================== -->
+
+</body>
+</html>
